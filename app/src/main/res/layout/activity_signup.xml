@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".signup_act"
+    android:background="@color/orange">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    android:gravity="top"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="1.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_arrow_back_black_32dp"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/logbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:text="Login"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"></LinearLayout>-->
+<!--            -->
+<!--            -->
+<!--        </ScrollView>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="Register Yourself"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@drawable/buttonbg"
+            android:textSize="36sp"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/nameinp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/texttocard"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:paddingLeft="16dp"
+            android:hint="Full Name"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"/>
+
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@drawable/texttocard"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_email_24"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:digits="0123456789"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:inputType="phone"-->
+<!--            android:maxLength="10"-->
+<!--            android:paddingLeft="16dp"-->
+<!--            android:hint="Email"/>-->
+        <EditText
+        android:id="@+id/phoneinp"
+        android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+        android:layout_height="60dp"
+        android:background="@drawable/texttocard"
+        android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+        android:drawablePadding="10dp"
+        android:digits="0123456789"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:paddingLeft="16dp"
+        android:hint="Number"/>
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@drawable/texttocard"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_remove_red_eye_24"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:paddingLeft="16dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:hint="Password"/>-->
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@drawable/texttocard"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_remove_red_eye_24"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:paddingLeft="16dp"-->
+<!--            android:hint="Confirm Password"/>-->
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_butt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/buttonbg"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:drawablePadding="8dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="20dp"
+            android:text="Get OTP"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
